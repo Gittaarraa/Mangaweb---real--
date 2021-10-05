@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/syles.css">
     <title>Sign Up</title>
 </head>
 <body>
+    <!-- Register -->
+    <div id="out" class="bg-black min-h-screen">
+
+        <!-- Top Nav Logo -->
+        <nav id="top-nav" class="flex flex-row">
+            <a href="index.html" class="flex flex-row justify-center items-center mx-16 my-8">
+                <img src="img/Logo.png" alt="" class="w-1/6">
+                <h1 class="text-white ml-4 font-medium text-2xl">MangaWeb</h1>
+            </a>
+        </nav>
+
+        <!-- Resgister Box -->
+        <div class="flex flex-col justify-center items-center">
+            <div id="login-box" class="bg-gray-900 flex flex-col overflow-hidden pt-10 pr-10 pl-10 pb-5 justify-items-center w-1/3 m-8">
+
+                <h1 class="text-white text-2xl text-center mb-6 pb-3 pr-3 pl-3">Sign up</h1>
+                <input class="bg-gray-700 p-3 mb-2 mt-3 placeholder-gray text-white rounded-md" type="email" placeholder="Username">
+                <input class="bg-gray-700 p-3 mt-2 mb-2 placeholder-gray text-white rounded-md" type="email" placeholder="Email">
+                <input class="bg-gray-700 p-3 mt-2 mb-2 placeholder-gray text-white rounded-md" type="password" placeholder="Password">
+                <input class="bg-gray-700 p-3 mt-2 mb-3 placeholder-gray text-white rounded-md" type="email" placeholder="Repeat Password">
+                <input class="pl-7 pr-7 pt-3 pb-3 mb-3 mr-3 ml-3 mt-5 bg-purple-800 text-white uppercase rounded-md overflow-hidden cursor-pointer" onclick="linkHome()" type="button" value="Sign up">
+                <a href="login.html" class="p-2 m-2 mt-1 text-purple-500 uppercase rounded-md overflow-hidden cursor-pointer text-center">Log In</a>
+
+            </div>
+        </div>
+
+        <div id="bottom">
+
+        </div>
+    </div>
     
+    <script>
+        function linkHome(){
+            location.href = "home.html";
+        }
+    </script>
 </body>
 </html>
